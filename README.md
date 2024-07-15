@@ -16,7 +16,7 @@ geocoding services into your Laravel applications.
 Use composer to install this package:
 
 ```bash
-composer require yourvendorname/geocode-package
+composer require daavelar/laravel-geocode
 ```
 
 ## Configuration
@@ -28,14 +28,14 @@ file.
 'providers' => [
     // Other service providers...
     
-    YourVendorName\Geocode\GeocodeServiceProvider::class,
+    Daavelar\LaravelGeocode\LaravelGeoCodeServiceProvider::class,
 ],
 ```
 
 You should also publish the config file with the following artisan command:
 
 ```bash
-php artisan vendor:publish --provider="YourVendorName\Geocode\GeocodeServiceProvider"
+php artisan vendor:publish --provider="Daavelar\LaravelGeocode\LaravelGeoCodeServiceProvider"
 ```
 
 This command will publish a `geocode.php` config file to your `config` directory. If you open this file, you will see
