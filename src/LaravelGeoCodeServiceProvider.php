@@ -16,6 +16,6 @@ class LaravelGeoCodeServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/config.php' => config_path('geocode.php')
-        ]);
+        ], 'geocode');
     }
 }
