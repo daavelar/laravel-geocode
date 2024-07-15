@@ -1,2 +1,2 @@
-# laravel-opencage-geocode
+# laravel-geocode
 Wrapper for OpenCage GeoCodeAPI
