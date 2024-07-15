@@ -1,4 +1,12 @@
 {
+  "name": "daavelar/laravel-geocode",
+  "description": "This is a Laravel package that provides functionalities for geocoding addresses using OpenCage API",
+  "authors": [
+    {
+      "name": "Diego Avelar",
+      "email": "diegoarmando2011@gmail.com"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Daavelar\\LaravelGeoCode\\": "src/"
