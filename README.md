@@ -40,3 +40,33 @@ php artisan vendor:publish --provider="Daavelar\LaravelGeocode\LaravelGeoCodeSer
 
 This command will publish a `geocode.php` config file to your `config` directory. If you open this file, you will see
 all the available settings you can adjust for this package.
+
+Usage
+To use the geocoding functionality, you can use the GeoCodeFacade provided by the package. Here is an example of how to use it:
+
+```php
+<?php
+use Daavelar\LaravelGeoCode\GeoCodeFacade as GeoCode;
+
+$address = '1600 Amphitheatre Parkway, Mountain View, CA';
+$result = GeoCode::fromAddress($address);
+
+print_r($result);
+```
+
+Make sure to set your OpenCage API key in the config/geocode.php file:
+
+```php
+<?php
+return [
+    'driver' => 'opencage',
+    'opencage' => [
+        'api_key' => env('OPENCAGE_API_KEY'),
+    ],
+];
+```
+
+You can set the OPENCAGE_API_KEY in your .env file:
+```bash
+OPENCAGE_API_KEY=your_api_key_here
+```
